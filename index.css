@@ -263,4 +263,12 @@ body {
   color: #fff;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.aboutus-btn:hover {
+  background: transparent;
+  color: #000;
+  border-radius: 0%;
+  border: 1px solid #4951ff;
 }
