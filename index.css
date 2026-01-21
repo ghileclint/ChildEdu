@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #f1f0f0;
 }
 
 body {
@@ -25,6 +26,21 @@ body {
   gap: 22px;
   list-style-type: none;
 }
+
+.nav-links li::after {
+  content: "";
+  width: 0%;
+  display: block;
+  height: 2px;
+  background: #898ee6;
+  transition: 0.3s;
+  margin: auto;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
 .nav-links a {
   text-decoration: none;
   color: black;
@@ -59,11 +75,18 @@ body {
   background: #4f6df5;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 9px;
   font-size: 15px;
   cursor: pointer;
-  text-align: center;
   margin-top: 10px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: transparent;
+  color:#000;
+  border: 1px solid #4951ff;
+  border-radius: 0%;
 }
 
 .image-gallery {
