@@ -10,7 +10,9 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  align-content: center;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -30,12 +32,13 @@ body {
 }
 
 .nav-btn {
-  padding: 8px;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 8px;
+  padding: 5px;
+  background: #4f6df5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
   font-size: 12px;
-  font-weight: bold;
+  cursor: pointer;
 }
 
 .bold-text {
@@ -167,8 +170,6 @@ body {
   transform: translateY(-6px);
 }
 
-
-
 @media (max-width: 768px) {
   .image-card {
     width: 140px;
@@ -185,33 +186,58 @@ body {
   }
 }
 
-
-.about-container {
+.content {
   display: flex;
+  gap: 45px;
+  margin: 100px 30px;
   justify-content: center;
   align-items: center;
-  height: 700px;
-  gap: 10px;
-  height: 100vh;
 }
 
-.image1, .image2, .image3 {
+.images {
+  display: flex;
+  gap: 10px;
+}
+
+.images img {
+  height: 200px;
+  width: 170px;
   border-radius: 8px;
 }
 
-.image-group-two {
+.image-1 {
+  display: flex;
+  align-items: center;
+}
+
+.image-2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
-.about-text {
-  margin-left: 30px;
-  padding-top: 60px;
+.image-2 .image-3 {
+  height: 150px;
 }
 
-.about-text p {
-  color: rgba(0, 0, 0, 0.8);
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.aboutus p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.aboutus-btn {
+  margin-top: 20px;
+  width: 100px;
+  padding: 8px;
+  border: none;
+  background: #4f6df5;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
 }
